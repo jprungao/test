@@ -1,0 +1,13 @@
+<nav>
+    <h1>
+        Pet 3000
+    </h1>
+    <div class="form">
+        <label>Dog name:</label>
+        <mat-form-field class="example-full-width">
+            <input matInput placeholder="Dog name" value="Sushi"
+            [(ngModel)]="name">
+          </mat-form-field>
+        <button mat-raised-button (click)="addPet()">Add</button>
+    </div>
+</nav>

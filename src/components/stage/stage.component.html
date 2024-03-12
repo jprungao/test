@@ -1,0 +1,11 @@
+<mat-card class="app-stage">
+    <mat-card-content>
+        {{ stage }}
+        <ul>
+            <li *ngFor="let pet of petsLists">
+                {{ pet?.name }}
+                <button mat-raised-button (click)="movePet(pet)">Move to next</button>
+            </li>
+        </ul>
+    </mat-card-content>
+</mat-card>

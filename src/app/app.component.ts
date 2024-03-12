@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { PetService } from 'src/services/pet.service';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'coding-test';
+
+  constructor(public petService: PetService) {}
+  
 }
